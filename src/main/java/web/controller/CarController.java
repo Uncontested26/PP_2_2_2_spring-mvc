@@ -15,7 +15,7 @@ import java.util.List;
 @Controller
 public class CarController {
 
-    private CarService carService = new CarServiceImpl();
+    private final CarService carService;
 @Autowired
     public CarController(CarService carService) {
         this.carService = carService;
