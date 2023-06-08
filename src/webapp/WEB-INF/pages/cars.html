@@ -16,11 +16,12 @@
         <th>series</th>
     </tr>
 
-        <tr th:each="car : ${cars}">
-            <td th:utext="${car.getModel()}">model</td>
-            <td th:utext="${car.getColor()}">color</td>
-            <td th:utext="${car.getSeries()}">series</td>
-        </tr>
+    <tr th:each="car : ${cars}">
+        <td th:utext="${car.getModel()}">model</td>
+        <td th:utext="${car.getColor()}">color</td>
+        <td th:utext="${car.getSeries()}">series</td>
+    </tr>
+</table>
 </table>
 
 </body>
